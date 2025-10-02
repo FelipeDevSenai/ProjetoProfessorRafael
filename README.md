@@ -14,6 +14,7 @@ Disciplina: Sistemas Operacionais/PM
    O que é?
 A busca linear percorre todos os elementos de uma lista até encontrar o valor desejado.  
 É simples, mas pode ser lenta para listas muito grandes.
+✔ É o jeito mais simples de procurar um item em uma lista: o algoritmo olha elemento por elemento, do começo ao fim, até achar o que você quer (ou até terminar a lista).
 
 Código 1.0 (Python)
 ```python
@@ -32,8 +33,10 @@ Busca Linear: 2
 2) Código 2.0
 🔎 Busca Binária
  O que é?
-A busca binária é muito mais rápida, mas só funciona em listas ordenadas.
-A cada passo, divide a lista ao meio até encontrar o valor ou terminar a busca.
+✔ A busca binária é muito mais rápida, mas só funciona em listas ordenadas.
+✔ A cada passo, divide a lista ao meio até encontrar o valor ou terminar a busca.
+
+RESUMIDAMENTE é uma busca muito mais rápida que a linear, mas só funciona em listas ordenadas (do menor para o maior).
 
 Código (Python)
 def binary_search(arr, target):
@@ -56,9 +59,15 @@ Busca Binária: 3
 
 3) Busca Não Linear (Árvore Binária de Busca)
  O que é?
-A árvore binária de busca (BST) organiza dados de forma hierárquica.
+✔ A árvore binária de busca (BST) organiza dados de forma hierárquica.
 Cada nó pode ter até dois filhos, e a busca segue pela esquerda (se menor) ou direita (se maior).
 
+✔ RESUMIDAMENTE é uma estrutura de dados em forma de árvore, onde:
+Cada nó (elemento) tem até dois "filhos".
+Elementos menores que o nó vão para a esquerda.
+Elementos maiores vão para a direita.
+
+A busca segue por esses caminhos.
 Código (Python)
 class Node:
     def _init_(self, key):
