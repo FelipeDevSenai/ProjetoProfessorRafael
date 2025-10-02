@@ -29,7 +29,8 @@ print("Busca Linear:", linear_search(lista, 30))  # retorna índice 2
 Saída esperada
 Busca Linear: 2
 
-2) Código 2.0 🔎 Busca Binária
+2) Código 2.0
+🔎 Busca Binária
  O que é?
 A busca binária é muito mais rápida, mas só funciona em listas ordenadas.
 A cada passo, divide a lista ao meio até encontrar o valor ou terminar a busca.
